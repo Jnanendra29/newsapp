@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Getting Started with News Paper View App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**MADE by: [Jnanendra Senapati]
 
-## Available Scripts
+**Features:**
+- Beautiful UI with made with the use of BootStrap and css file.
+- Fetches News from NewsAPI
+- Read the full news by following the link provided in the Article.
+- Read news in online mode only.
 
-In the project directory, you can run:
+### `npm i`
+To install all dependencies before running the app
+Have to use their own API_KEY for running the projects by changing API_KEY below- >
+const url = 'https://newsapi.org/v2/top-headlines?' + 'country=us&' + `category=${category}&` + 'apiKey={API_KEY}';
+
+### `How to generate API_KEY`
+Step 1 - Go to Google, search NewsAPI and click on the first link
+Step 2 - Register to generate your own API_KEY
+Step 3 - Replace your own apiKey with the API_KEY in the code 
+Step 4 - Enjoy Reading News Paper View App
 
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
+To run the app
+The page will reload when you make changes.
 You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**What I have learned from this project:**
+- Fetching JSON data and parsing it.
+- Rendering page upon changing category component
+- Redirecting to pages using Router from react-router-dom
+- Passing of data between the components
+- Responsive Design
 
-### `npm run build`
+**TechStacks used**
+- ReactJS
+- BootStrap
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**It a fully Open Source project so go ahead and fork it.**

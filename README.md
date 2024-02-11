@@ -36,4 +36,14 @@ You may also see any lint errors in the console.
 - ReactJS
 - BootStrap
 
+### `Challenges Faced`
+- Creating a responsive design
+- Fetching data and showing the data in UI
+- Routing to other pages using Buttons
+
+### `How I overcame`
+- Reading Bootstrap documentation
+- Using Debugger and in VScode to see the data flow
+- Researching about routing techniques in ReactJS documentation
+
 **It a fully Open Source project so go ahead and fork it.**

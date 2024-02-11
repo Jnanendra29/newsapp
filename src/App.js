@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import NewsApp from './components/NewsApp';
+import ArticleDetails from './components/ArticleDetails';
+import Navbar from './components/Navbar';
 
 function App() {
+  const [category, setCategory] = useState("general")
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar setCategory={setCategory} />
+      <Routes>
+        <Route path="/" element={<NewsApp category={category} />} />
+        <Route path="/article/:id" element={<ArticleDetails category={category} />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+
+
+//const url = 'https://newsapi.org/v2/top-headlines?' +
+// 'country=us&' + `category=${category}&` +
+// 'apiKey=952da4498e3e448883429cd846ca31e5';

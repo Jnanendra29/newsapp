@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+
+
+.article-details-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.article-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.article-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.article-description {
+    margin-bottom: 30px;
+    color: #666;
 }
 
-.App-link {
-  color: #61dafb;
+.article-details {
+    font-size: 16px;
+    color: #555;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.article-details p {
+    margin-bottom: 15px;
+}
+
+.article-details a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.article-details a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .article-title {
+        font-size: 20px;
+    }
+
+    .article-details {
+        font-size: 14px;
+    }
+}
+
+/* Additional styles for smaller devices (e.g., mobile phones) */
+@media screen and (max-width: 576px) {
+    .article-title {
+        font-size: 18px;
+    }
+
+    .article-description {
+        font-size: 14px;
+    }
+
+    .article-details {
+        font-size: 12px;
+    }
 }
